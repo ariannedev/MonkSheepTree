@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
     public float gravityAtMaxSpeed = 0.5f;
     public WorldMover worldMover;
 
+    public float deathY = -7f;
+
     private Rigidbody2D rb;
     private Collider2D col;
 
@@ -17,6 +19,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        CheckFallDeath();
         decreaseGravity();
     }
 
@@ -25,5 +28,16 @@ public class Player : MonoBehaviour
     {
         float t = Mathf.InverseLerp(worldMover.startSpeed, worldMover.maxSpeed, worldMover.CurrentSpeed);
         rb.gravityScale = Mathf.Lerp(gravityAtMinSpeed, gravityAtMaxSpeed, t);
+    }
+
+    void CheckFallDeath()
+    {
+        if (transform.position.y < deathY)
+            GameManager.Instance.GameOver();
+    }
+
+    public void FreezePhysics()
+    {
+        rb.simulated = false;
     }
 }
