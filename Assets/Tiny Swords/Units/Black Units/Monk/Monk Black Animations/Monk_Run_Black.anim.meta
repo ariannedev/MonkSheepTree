@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-guid: f5799b2fcee5a40fdaf130ca1b82be20
+guid: 503407c9e700e49a489fe5b674dc1731
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 352566
-  packageName: Tiny Swords
-  packageVersion: 1.0
-  assetPath: Assets/Tiny Swords/Units/Black Units/Monk/Monk Black Animations/Monk_Run_Black.anim
-  uploadId: 844324
