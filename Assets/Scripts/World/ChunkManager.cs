@@ -10,9 +10,9 @@ public class ChunkManager : MonoBehaviour
 {
     public Transform worldParent;
     public GameObject[] chunkPrefabs;
-    public float chunkWidth = 10f;
+    private float chunkWidth = 10f;
     private List<GameObject> activeChunks = new List<GameObject>();
-    public float spawnX = 0f;
+    private float spawnX = 0f;
 
     private int chunksToKeepInMem = 4;
 

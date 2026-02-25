@@ -434,7 +434,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -445,7 +445,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 7
+  m_Constraints: 5
 --- !u!114 &1693539707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635a1a7ab964c4448901fb7bf17ce87f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  speed: 5
 --- !u!1 &2013597096
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,12 +483,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013597096}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d95fe427154c04d1bb15a1626e57c36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorldMover
-  speed: 5
+  startSpeed: 10
+  maxSpeed: 14
+  rampDuration: 120
 --- !u!4 &2013597098
 Transform:
   m_ObjectHideFlags: 0
@@ -521,8 +522,7 @@ MonoBehaviour:
   chunkPrefabs:
   - {fileID: 1064628451513370683, guid: 1bd65a9584a2649d78fa065e8e8aa4b9, type: 3}
   - {fileID: 5664231951428236450, guid: 21b47e874811840dea5d0d5d6600c1e6, type: 3}
-  chunkWidth: 10
-  spawnX: 0
+  - {fileID: 5664231951428236450, guid: 451caf41e3dda4c6e87ae530f62856bc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
